@@ -1,0 +1,6 @@
+D:\documents\WeMail\obj\Debug\net6.0-windows7.0\WeMail.csproj.AssemblyReference.cache
+D:\documents\WeMail\obj\Debug\net6.0-windows7.0\App.g.cs
+D:\documents\WeMail\obj\Debug\net6.0-windows7.0\WeMail_MarkupCompile.cache
+D:\documents\WeMail\obj\Debug\net6.0-windows7.0\WeMail_MarkupCompile.lref
+D:\documents\WeMail\obj\Debug\net6.0-windows7.0\Views\MainWindow.baml
+D:\documents\WeMail\obj\Debug\net6.0-windows7.0\Views\MainWindow.g.cs
