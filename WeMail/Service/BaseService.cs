@@ -16,16 +16,16 @@ namespace WeMail.Service
             this.serviceName = serviceName;
         }
 
-        public async Task<APIResult<TEntity>> AddAsync(TEntity entity)
+        public async Task<ApiResponse<TEntity>> AddAsync(TEntity entity)
         {
             BaseRequest request = new BaseRequest();
             request.Method = RestSharp.Method.POST;
             request.Route = $"api/{serviceName}/Add";
             request.Parameter = entity;
-            return await client.ExcuteAsync<TEntity>(request);
+            return await client.ExecuteAsync<TEntity>(request);
         }
 
-        public async Task<APIResult> DeleteAsync(int id)
+        public async Task<MyToDo.Shared.Contact.ApiResponse> DeleteAsync(int id)
         {
             BaseRequest request = new BaseRequest();
             request.Method = RestSharp.Method.DELETE;
@@ -33,29 +33,29 @@ namespace WeMail.Service
             return await client.ExcuteAsync(request);
         }
 
-        public async Task<APIResult<PagedList<TEntity>>> GetAllAsync(QueryParameter parameter)
+        public async Task<ApiResponse<PagedList<TEntity>>> GetAllAsync(QueryParameter parameter)
         {
             BaseRequest request = new BaseRequest();
             request.Method = RestSharp.Method.GET;
             request.Route = $"api/{serviceName}/GetAll?pageIndex={parameter.PageIndex}" + $"&pageSize={parameter.PageSize}" + $"&search={parameter.Search}";
-            return await client.ExcuteAsync<PagedList<TEntity>>(request);
+            return await client.ExecuteAsync<PagedList<TEntity>>(request);
         }
 
-        public async Task<APIResult<TEntity>> GetFirstOfDefaultAsync(int id)
+        public async Task<ApiResponse<TEntity>> GetFirstOfDefaultAsync(int id)
         {
             BaseRequest request = new BaseRequest();
             request.Method = RestSharp.Method.GET;
             request.Route = $"api/{serviceName}/Get?id={id}";
-            return await client.ExcuteAsync<TEntity>(request);
+            return await client.ExecuteAsync<TEntity>(request);
         }
 
-        public async Task<APIResult<TEntity>> UpdateAsync(TEntity entity)
+        public async Task<ApiResponse<TEntity>> UpdateAsync(TEntity entity)
         {
             BaseRequest request = new BaseRequest();
             request.Method = RestSharp.Method.POST;
             request.Route = $"api/{serviceName}/Update";
             request.Parameter = entity;
-            return await client.ExcuteAsync<TEntity>(request);
+            return await client.ExecuteAsync<TEntity>(request);
         }
     }
 }

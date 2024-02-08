@@ -47,10 +47,10 @@ namespace WeMail.ViewModels
                 PageIndex = 0,
                 PageSize = 100
             });
-            if (todoResult.Status == 200)
+            if (todoResult.Status)
             {
                 ToDoDtos.Clear();
-                foreach (var item in todoResult.Data.Items)
+                foreach (var item in todoResult.Result.Items)
                 {
                     ToDoDtos.Add(item);
                 }

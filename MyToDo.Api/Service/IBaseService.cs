@@ -1,13 +1,21 @@
-﻿using System.Threading.Tasks;
+﻿using MyToDo.Shared.Parameters;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace MyToDo.Api.Service
 {
-    public interface IBaseService<TEntity> where TEntity : class
+    public interface IBaseService<T>
     {
-        Task<APIResult> Create(TEntity entity);
-        Task<APIResult> Delete(int id);
-        Task<APIResult> Edit(int id, TEntity entity);
-        Task<APIResult> GetById(int id);
-        Task<APIResult> GetAll();
+        Task<ApiResponse> GetAllAsync(QueryParameter query);
+
+        Task<ApiResponse> GetSingleAsync(int id);
+
+        Task<ApiResponse> AddAsync(T model);
+
+        Task<ApiResponse> UpdateAsync(T model);
+
+        Task<ApiResponse> DeleteAsync(int id);
     }
 }

@@ -1,30 +1,45 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyToDo.Api.Model;
+using MyToDo.Api.Context;
 using MyToDo.Api.Service;
+using MyToDo.Shared.Dtos;
+using MyToDo.Shared.Parameters;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace MyToDo.Api.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    /// <summary>
+    /// 待办事项控制器
+    /// </summary>
     [ApiController]
+    [Route("api/[controller]/[action]")]
     public class ToDoController : ControllerBase
     {
-        private readonly IToDoService toDoService;
+        private readonly IToDoService service;
 
-        public ToDoController(IToDoService toDoService)
+        public ToDoController(IToDoService service)
         {
-            this.toDoService = toDoService;
+            this.service = service;
         }
 
         [HttpGet]
-        public async Task<ActionResult<APIResult>> GetById(int id) => await toDoService.GetById(id);
-        [HttpPost]
-        public async Task<ActionResult<APIResult>> Create([FromBody] ToDo model) => await toDoService.Create(model);
-        [HttpPut]
-        public async Task<ActionResult<APIResult>> Edit(int id, [FromBody] ToDo model) => await toDoService.Edit(id, model);
-        [HttpDelete]
-        public async Task<ActionResult<APIResult>> Delete(int id) => await toDoService.Delete(id);
+        public async Task<ApiResponse> Get(int id) => await service.GetSingleAsync(id);
+
         [HttpGet]
-        public async Task<ActionResult<APIResult>> GetAll() => await toDoService.GetAll();
+        public async Task<ApiResponse> GetAll([FromQuery] ToDoParameter param) => await service.GetAllAsync(param);
+
+        [HttpGet]
+        public async Task<ApiResponse> Summary() => await service.Summary();
+
+        [HttpPost]
+        public async Task<ApiResponse> Add([FromBody] ToDoDto model) => await service.AddAsync(model);
+
+        [HttpPost]
+        public async Task<ApiResponse> Update([FromBody] ToDoDto model) => await service.UpdateAsync(model);
+
+        [HttpDelete]
+        public async Task<ApiResponse> Delete(int id) => await service.DeleteAsync(id);
     }
 }

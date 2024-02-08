@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0PjRHbI+Etmu/WV968NVhoX0eqQQcmoV7KOWIUBEtvO//aDtpGKMDgp9i8Jr8KCUULGENLR8I8hCAPglhFeFKA==",
+  "dgSpecHash": "kvjLf3ABnA3IjasRuHJ+wA6fDVFoebM04cky4klx+NuAReFYrUJUaV9ZO+0LvCac7WAmY4w+ju748C0cGgMzSw==",
   "success": true,
-  "projectFilePath": "D:\\documents\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Desktop\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\杨云戈\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

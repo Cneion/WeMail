@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\documents\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj": {}
+    "D:\\Desktop\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj": {}
   },
   "projects": {
-    "D:\\documents\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj": {
+    "D:\\Desktop\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\documents\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj",
+        "projectUniqueName": "D:\\Desktop\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj",
         "projectName": "MyToDo.Shared",
-        "projectPath": "D:\\documents\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj",
-        "packagesPath": "C:\\Users\\28211\\.nuget\\packages\\",
-        "outputPath": "D:\\documents\\WeMail\\MyToDo.Shared\\obj\\",
+        "projectPath": "D:\\Desktop\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj",
+        "packagesPath": "C:\\Users\\杨云戈\\.nuget\\packages\\",
+        "outputPath": "D:\\Desktop\\WeMail\\MyToDo.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\28211\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\杨云戈\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +43,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

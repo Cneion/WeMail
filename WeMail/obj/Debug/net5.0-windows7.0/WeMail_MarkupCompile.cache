@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\documents\WeMail\WeMail\obj\Debug\net5.0-windows7.0\
+D:\Desktop\WeMail\WeMail\obj\Debug\net5.0-windows7.0\
 WeMail
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-D:\documents\WeMail\WeMail\App.xaml
+D:\Desktop\WeMail\WeMail\App.xaml
 7667617955
 
 271913503575
-3421310469956
+352122733885
 Views\AboutView.xaml;Views\IndexView.xaml;Views\MainWindow.xaml;Views\MemoView.xaml;Views\SettingView.xaml;Views\SkinView.xaml;Views\ToDoView.xaml;
 
 False
