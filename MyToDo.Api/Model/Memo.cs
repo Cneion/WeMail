@@ -1,5 +1,7 @@
-﻿namespace MyToDo.Api.Model {
-    public class Memo : BaseEntity{
+﻿namespace MyToDo.Api.Model
+{
+    public class Memo : BaseEntity
+    {
         public string Title { get; set; }
         public string Content { get; set; }
     }

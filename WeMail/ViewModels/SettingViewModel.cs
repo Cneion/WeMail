@@ -1,26 +1,22 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WeMail.Common.Models;
 using WeMail.Extensions;
 
 namespace WeMail.ViewModels
 {
-    public class SettingViewModel:BindableBase
+    public class SettingViewModel : BindableBase
     {
-        public SettingViewModel(IRegionManager regionManager) { 
+        public SettingViewModel(IRegionManager regionManager)
+        {
             MenuBars = new ObservableCollection<MenuBar>();
             this.regionManager = regionManager;
             NavigateCommand = new DelegateCommand<MenuBar>(Navigate);
             CreateMenuBar();
         }
-        public DelegateCommand<MenuBar> NavigateCommand { get;private set; }
+        public DelegateCommand<MenuBar> NavigateCommand { get; private set; }
         private readonly IRegionManager regionManager;
 
         private ObservableCollection<MenuBar> menuBars;

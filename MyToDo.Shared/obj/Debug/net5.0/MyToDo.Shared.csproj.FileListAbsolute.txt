@@ -1,0 +1,12 @@
+D:\documents\WeMail\MyToDo.Shared\bin\Debug\net5.0\MyToDo.Shared.deps.json
+D:\documents\WeMail\MyToDo.Shared\bin\Debug\net5.0\MyToDo.Shared.dll
+D:\documents\WeMail\MyToDo.Shared\bin\Debug\net5.0\MyToDo.Shared.pdb
+D:\documents\WeMail\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\documents\WeMail\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.AssemblyInfoInputs.cache
+D:\documents\WeMail\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.AssemblyInfo.cs
+D:\documents\WeMail\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.csproj.CoreCompileInputs.cache
+D:\documents\WeMail\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.sourcelink.json
+D:\documents\WeMail\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.dll
+D:\documents\WeMail\MyToDo.Shared\obj\Debug\net5.0\refint\MyToDo.Shared.dll
+D:\documents\WeMail\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.pdb
+D:\documents\WeMail\MyToDo.Shared\obj\Debug\net5.0\ref\MyToDo.Shared.dll

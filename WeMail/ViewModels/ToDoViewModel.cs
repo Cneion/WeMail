@@ -1,27 +1,25 @@
-﻿using Prism.Commands;
+﻿using MyToDo.Shared.Dtos;
+using MyToDo.Shared.Parameters;
+using Prism.Commands;
 using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WeMail.Common.Models;
+using WeMail.Service;
 
 namespace WeMail.ViewModels
 {
-    public class ToDoViewModel:BindableBase
+    public class ToDoViewModel : BindableBase
     {
-        public ToDoViewModel()
+        public ToDoViewModel(IToDoService service)
         {
             ToDoDtos = new ObservableCollection<ToDoDto>();
-            CreateToDoList();
+            this.service = service;
             AddCommand = new DelegateCommand(Add);
+            CreateToDoList();
         }
+        private readonly Service.IToDoService service;
+        private bool isRightDrawerOpen;
 
-        private bool  isRightDrawerOpen;
-
-        public bool  IsRightDrawerOpen
+        public bool IsRightDrawerOpen
         {
             get { return isRightDrawerOpen; }
             set { isRightDrawerOpen = value; RaisePropertyChanged(); }
@@ -32,7 +30,7 @@ namespace WeMail.ViewModels
             IsRightDrawerOpen = true;
         }
 
-        public DelegateCommand AddCommand { get;private set; }
+        public DelegateCommand AddCommand { get; private set; }
         private ObservableCollection<ToDoDto> toDoDtos;
 
         public ObservableCollection<ToDoDto> ToDoDtos
@@ -41,15 +39,21 @@ namespace WeMail.ViewModels
             set { toDoDtos = value; }
         }
 
-        void CreateToDoList()
+        async void CreateToDoList()
         {
-            for(int i = 0; i < 20;i++)
+            ToDoDtos.Clear();
+            var todoResult = await service.GetAllAsync(new QueryParameter()
             {
-                ToDoDtos.Add(new ToDoDto()
+                PageIndex = 0,
+                PageSize = 100
+            });
+            if (todoResult.Status == 200)
+            {
+                ToDoDtos.Clear();
+                foreach (var item in todoResult.Data.Items)
                 {
-                    Title = "标题" + i,
-                    Content="测试数据..."
-                }) ;
+                    ToDoDtos.Add(item);
+                }
             }
         }
 

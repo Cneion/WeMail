@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WeMail.Common.Models
+﻿namespace WeMail.Common.Models
 {
-    public class MemoDto:BaseDto
+    public class MemoDto : BaseDto
     {
         private string title;
         private string content;

@@ -1,24 +1,155 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\WeMail\\WeMail\\WeMail.csproj": {}
+    "D:\\documents\\WeMail\\WeMail\\WeMail.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\WeMail\\WeMail\\WeMail.csproj": {
+    "D:\\documents\\WeMail\\MyToDo.Api\\MyToDo.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\WeMail\\WeMail\\WeMail.csproj",
-        "projectName": "WeMail",
-        "projectPath": "D:\\Desktop\\WeMail\\WeMail\\WeMail.csproj",
-        "packagesPath": "C:\\Users\\杨云戈\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\WeMail\\WeMail\\obj\\",
+        "projectUniqueName": "D:\\documents\\WeMail\\MyToDo.Api\\MyToDo.Api.csproj",
+        "projectName": "MyToDo.Api",
+        "projectPath": "D:\\documents\\WeMail\\MyToDo.Api\\MyToDo.Api.csproj",
+        "packagesPath": "C:\\Users\\28211\\.nuget\\packages\\",
+        "outputPath": "D:\\documents\\WeMail\\MyToDo.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\杨云戈\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\28211\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\documents\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\documents\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj",
+        "projectName": "MyToDo.Shared",
+        "projectPath": "D:\\documents\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj",
+        "packagesPath": "C:\\Users\\28211\\.nuget\\packages\\",
+        "outputPath": "D:\\documents\\WeMail\\MyToDo.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\28211\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\documents\\WeMail\\WeMail\\WeMail.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\documents\\WeMail\\WeMail\\WeMail.csproj",
+        "projectName": "WeMail",
+        "projectPath": "D:\\documents\\WeMail\\WeMail\\WeMail.csproj",
+        "packagesPath": "C:\\Users\\28211\\.nuget\\packages\\",
+        "outputPath": "D:\\documents\\WeMail\\WeMail\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\28211\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,7 +162,14 @@
         "frameworks": {
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\documents\\WeMail\\MyToDo.Api\\MyToDo.Api.csproj": {
+                "projectPath": "D:\\documents\\WeMail\\MyToDo.Api\\MyToDo.Api.csproj"
+              },
+              "D:\\documents\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj": {
+                "projectPath": "D:\\documents\\WeMail\\MyToDo.Shared\\MyToDo.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -52,9 +190,17 @@
               "target": "Package",
               "version": "[1.1.77, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Prism.DryIoc": {
               "target": "Package",
               "version": "[8.1.97, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.15.0, )"
             }
           },
           "imports": [
@@ -68,6 +214,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeMail", "WeMail.csproj", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{457931F6-4EEF-4317-974B-26087D2E3C96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyToDo.Api", "..\MyToDo.Api\MyToDo.Api.csproj", "{33491658-1F2C-4C19-B58D-086D1859A712}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyToDo.Api", "..\MyToDo.Api\MyToDo.Api.csproj", "{33491658-1F2C-4C19-B58D-086D1859A712}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyToDo.Shared", "..\MyToDo.Shared\MyToDo.Shared.csproj", "{9A07C0A2-C227-4EFF-92B2-B7F0C5604612}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{33491658-1F2C-4C19-B58D-086D1859A712}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33491658-1F2C-4C19-B58D-086D1859A712}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33491658-1F2C-4C19-B58D-086D1859A712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A07C0A2-C227-4EFF-92B2-B7F0C5604612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A07C0A2-C227-4EFF-92B2-B7F0C5604612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A07C0A2-C227-4EFF-92B2-B7F0C5604612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A07C0A2-C227-4EFF-92B2-B7F0C5604612}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

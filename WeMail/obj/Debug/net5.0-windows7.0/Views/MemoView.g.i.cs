@@ -12,18 +12,6 @@
 using MaterialDesignThemes.Wpf;
 using MaterialDesignThemes.Wpf.Converters;
 using MaterialDesignThemes.Wpf.Transitions;
-using Microsoft.Xaml.Behaviors;
-using Microsoft.Xaml.Behaviors.Core;
-using Microsoft.Xaml.Behaviors.Input;
-using Microsoft.Xaml.Behaviors.Layout;
-using Microsoft.Xaml.Behaviors.Media;
-using Prism.DryIoc;
-using Prism.Interactivity;
-using Prism.Ioc;
-using Prism.Mvvm;
-using Prism.Regions;
-using Prism.Regions.Behaviors;
-using Prism.Services.Dialogs;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -68,7 +56,7 @@ namespace WeMail.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WeMail;V1.0.0.0;component/views/memoview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WeMail;component/views/memoview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\MemoView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

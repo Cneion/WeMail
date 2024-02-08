@@ -1,17 +1,11 @@
-﻿using ImTools;
-using Prism.Commands;
+﻿using Prism.Commands;
 using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WeMail.Common.Models;
 
 namespace WeMail.ViewModels
 {
-    public class MemoViewModel: BindableBase
+    public class MemoViewModel : BindableBase
     {
         public MemoViewModel()
         {

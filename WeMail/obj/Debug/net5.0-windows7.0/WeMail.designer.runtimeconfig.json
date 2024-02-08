@@ -1,14 +1,19 @@
 {
   "runtimeOptions": {
     "tfm": "net5.0",
-    "framework": {
-      "name": "Microsoft.WindowsDesktop.App",
-      "version": "5.0.0"
-    },
+    "frameworks": [
+      {
+        "name": "Microsoft.WindowsDesktop.App",
+        "version": "5.0.0"
+      },
+      {
+        "name": "Microsoft.AspNetCore.App",
+        "version": "5.0.0"
+      }
+    ],
     "additionalProbingPaths": [
-      "C:\\Users\\杨云戈\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\杨云戈\\.nuget\\packages",
-      "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\28211\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\28211\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

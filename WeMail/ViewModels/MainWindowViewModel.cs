@@ -1,15 +1,13 @@
 ﻿using Prism.Commands;
-using Prism.Common;
 using Prism.Mvvm;
 using Prism.Regions;
-using System;
 using System.Collections.ObjectModel;
-using System.Windows.Controls.Ribbon;
 using WeMail.Common.Models;
 using WeMail.Extensions;
 
 namespace WeMail.ViewModels
 {
+
     public class MainWindowViewModel : BindableBase
     {
 
@@ -21,7 +19,7 @@ namespace WeMail.ViewModels
             this.regionManager = regionManager;
             GoBackCommand = new DelegateCommand(() =>
             {
-                if(journal!=null && journal.CanGoBack)
+                if (journal != null && journal.CanGoBack)
                 {
                     journal.GoBack();
                 }
@@ -37,19 +35,19 @@ namespace WeMail.ViewModels
 
         private void Navigate(MenuBar bar)
         {
-            if(bar == null || string.IsNullOrWhiteSpace(bar.NameSpace))
+            if (bar == null || string.IsNullOrWhiteSpace(bar.NameSpace))
             {
                 return;
             }
-            regionManager.Regions[PrismManager.MainViewRegionName].RequestNavigate(bar.NameSpace,back =>
+            regionManager.Regions[PrismManager.MainViewRegionName].RequestNavigate(bar.NameSpace, back =>
             {
                 journal = back.Context.NavigationService.Journal;
             });
         }
 
-        public DelegateCommand<MenuBar> NavigateCommand {  get;private set; }
-        public DelegateCommand GoBackCommand { get;private set; }
-        public DelegateCommand GoForwardCommand { get;private set; }
+        public DelegateCommand<MenuBar> NavigateCommand { get; private set; }
+        public DelegateCommand GoBackCommand { get; private set; }
+        public DelegateCommand GoForwardCommand { get; private set; }
 
         private readonly IRegionManager regionManager;
         private IRegionNavigationJournal journal;

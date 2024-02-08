@@ -17,10 +17,12 @@ namespace WeMail.Views
                 drawerHost.IsLeftDrawerOpen = false;
             };
 
-            btnMin.Click += (s,e) => { 
+            btnMin.Click += (s, e) =>
+            {
                 this.WindowState = WindowState.Minimized;
             };
-            btnMax.Click += (s, e) => {
+            btnMax.Click += (s, e) =>
+            {
                 if (this.WindowState == WindowState.Maximized)
                 {
                     this.WindowState = WindowState.Normal;
@@ -32,7 +34,7 @@ namespace WeMail.Views
             btnCls.Click += (s, e) => { this.Close(); };
             colorZone.MouseMove += (s, e) =>
             {
-                if(e.LeftButton == MouseButtonState.Pressed) { this.DragMove(); }
+                if (e.LeftButton == MouseButtonState.Pressed) { this.DragMove(); }
             };
             colorZone.MouseDoubleClick += (s, e) =>
             {

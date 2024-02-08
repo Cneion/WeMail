@@ -1,16 +1,18 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MyToDo.Api.Model;
 using MyToDo.Api.Service;
 using System.Threading.Tasks;
 
-namespace MyToDo.Api.Controllers {
+namespace MyToDo.Api.Controllers
+{
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class ToDoController : ControllerBase {
+    public class ToDoController : ControllerBase
+    {
         private readonly IToDoService toDoService;
 
-        public ToDoController(IToDoService toDoService) {
+        public ToDoController(IToDoService toDoService)
+        {
             this.toDoService = toDoService;
         }
 

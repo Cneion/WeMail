@@ -1,7 +1,9 @@
 using System;
 
-namespace MyToDo.Api {
-    public class WeatherForecast {
+namespace MyToDo.Api
+{
+    public class WeatherForecast
+    {
         public DateTime Date { get; set; }
 
         public int TemperatureC { get; set; }
